@@ -27,14 +27,14 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather App",
-    name: "Andrew",
+    name: "Arwa",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
-    name: "Andrew",
+    name: "Arwa",
   });
 });
 
@@ -42,7 +42,7 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
     helptext: "This is some helpful text",
-    name: "Andrew Mead",
+    name: "Arwa",
   });
 });
 
@@ -90,7 +90,7 @@ app.get("/weather", (req, res) => {
 
 app.get("/help/*", (req, res) => {
   res.render("rendorError", {
-    name: "Andrew",
+    name: "Arwa",
     title: "404",
     error: "Help article not found",
   });
@@ -99,7 +99,7 @@ app.get("/help/*", (req, res) => {
 //for anything abstract which doesn't find match then this wild card character(*) will be called
 app.get("*", (req, res) => {
   res.render("rendorError", {
-    name: "Andrew",
+    name: "Arwa",
     title: "404",
     error: "Page not Found",
   });
