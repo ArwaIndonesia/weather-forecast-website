@@ -15,7 +15,7 @@ const forecast = function (lat, long, callback) {
     } else {
       callback(
         undefined,
-        `${body.daily[0].weather[0].description} It is currently  ${body.current.temp} degrees out.`
+        `${body.daily[0].weather[0].description}, High today is ${body.daily[0].temp.max} with a low of ${body.daily[0].temp.min} and It is currently  ${body.current.temp} degrees out.`
       );
     }
   });
