@@ -18,5 +18,4 @@ const geocode = function (address, callback) {
     }
   });
 };
-
 module.exports = geocode;
